@@ -1,0 +1,45 @@
+/* The Grand Library Heist — page chrome around the canvas. */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #14100b;
+  color: #e8e0c8;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+main {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 12px 10px 24px;
+  text-align: center;
+}
+h1 {
+  margin: 4px 0;
+  font-size: 30px;
+  letter-spacing: 1px;
+  color: #ffd678;
+}
+.tagline {
+  margin: 2px 0 10px;
+  font-style: italic;
+  color: #b8a888;
+}
+canvas {
+  display: block;
+  margin: 0 auto;
+  width: min(1280px, 100%);
+  height: auto;
+  background: #241a10;
+  border: 3px solid #6a5c4c;
+  border-radius: 6px;
+}
+.help {
+  margin: 10px auto 0;
+  max-width: 900px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #c8b898;
+}
+/* Bare mode for screenshots: only the canvas, edge to edge. */
+body.bare main { padding: 0; max-width: none; }
+body.bare h1, body.bare .tagline, body.bare .help { display: none; }
+body.bare canvas { border: 0; border-radius: 0; width: 1280px; max-width: none; }

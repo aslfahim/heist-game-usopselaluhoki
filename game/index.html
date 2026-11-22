@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Grand Library Heist</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='13'>📖</text></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>The Grand Library Heist</h1>
+  <p class="tagline">Midnight in the old grand library. Steal the Gutenberg Folio and slip out the main doors.</p>
+  <canvas id="game" width="1280" height="800"></canvas>
+  <p class="help">WASD / arrows to move &middot; SHIFT to run (loud!) &middot; C to sneak &middot; SPACE to knock a book stack &middot; R to restart.
+  Rugs hush your steps. Read the cones before you move. The key opens the rare wing; the Folio opens the way out.</p>
+</main>
+<script type="module">
+  import { start } from './src/main.js';
+  start();
+</script>
+</body>
+</html>
