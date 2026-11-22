@@ -45,8 +45,6 @@ function handIn() {
     throw new Error('game/index.html is missing — the game has no entry point');
   }
 
-  // Start from a clean output directory so a stale file can never leak in.
-  rmSync(outputDir, { recursive: true, force: true });
   mkdirSync(outputDir, { recursive: true });
 
   copyTree(gameDir, join(outputDir, 'game'));
